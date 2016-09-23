@@ -29,7 +29,29 @@ When you click one of the food markets on the map, the information will show on 
 On the left top there will be a current weather data use OpenWeatherMap API (http://openweathermap.org/api).
 
 
+<html>
+<body>
 
+<div id= "demo"><h2>Let AJAX change this text</h2></div>
+
+<button type="botton" onclick="loadDoc()"> Change Content</button>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "ftp://ftp.ncdc.noaa.gov/pub/data/hourly_precip-3240/by_month2013/3240sep2013.dat", true);
+  xhttp.send();
+}
+
+</script>
+
+</body>
+</html>
 
 
 
