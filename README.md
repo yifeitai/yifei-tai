@@ -56,3 +56,4 @@ function loadDoc() {
 
 
 
+for the website looks like. i think its pretty like google map which can search the freshest crop in west lafayette and when you find the market you interested in you can click it on the map and the detail of that market and crop will be showed such asfresh level, price, market location, customer rate of the crop   , parking lot, open hour, customer rate of the market, service, etc.  
